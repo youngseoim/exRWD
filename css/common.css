@@ -208,6 +208,8 @@ legend,
 
 /* 공통 레이아웃 */
 .container{
+  display: flex;
+  flex-flow: wrap;
 }
 .appFooter{
   width: 100%;
