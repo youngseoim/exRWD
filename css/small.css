@@ -1,0 +1,54 @@
+/* 모바일 기본 글자 크기 */
+body{
+  font-size: 1.5rem;
+  background-color: pink;
+}
+/* @media all and (max-width: 768px){
+  body{
+    background-color: pink;
+  }
+}
+@media all and (min-width:769px) and (max-width:1024px){
+  body{
+    background-color: skyblue;
+  }
+} */
+
+/* 모바일 레이아웃 */
+.appHeader, 
+.appMain {
+  width: 100%;
+}
+/* 모바일 헤더 */
+.appHeader{
+  background-color: silver;
+  /* display: flex;
+  flex-flow: column nowrap; */
+}
+/* .memberOnly{
+  display: flex;
+  order: -1;
+  justify-content: flex-end;
+}
+.searchForm{
+  margin: 0 auto;
+  display: block;
+} */
+/* 모바일 네비게이션 */
+.appNavigation{
+  background-color: purple;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70vw;
+  height: 100vh;
+  transform: translateX(-100%);
+}
+/* 모바일 메인 컨텐츠 */
+.appMain{
+  background-color: lime;
+}
+/* 모바일 푸터 */
+.appFooter{
+  background-color: orange;
+}
