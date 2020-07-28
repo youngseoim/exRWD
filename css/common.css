@@ -208,8 +208,6 @@ legend,
 
 /* 공통 레이아웃 */
 .container{
-  display: flex;
-  flex-flow: row wrap;
 }
 .appFooter{
   width: 100%;
@@ -217,6 +215,13 @@ legend,
 /* 공통 헤더 */
 .appHeader{
   background-color: silver;
+  display: grid;
+}
+/* 공통 멤버 링크 */
+.memberOnly{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
 }
 .appNavigation{
   background-color: purple;
@@ -229,3 +234,4 @@ legend,
 .appFooter{
   background-color: orange;
 }
+

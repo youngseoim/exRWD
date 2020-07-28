@@ -3,16 +3,6 @@ body{
   font-size: 1.5rem;
   background-color: pink;
 }
-/* @media all and (max-width: 768px){
-  body{
-    background-color: pink;
-  }
-}
-@media all and (min-width:769px) and (max-width:1024px){
-  body{
-    background-color: skyblue;
-  }
-} */
 
 /* 모바일 레이아웃 */
 .appHeader, 
@@ -22,18 +12,40 @@ body{
 /* 모바일 헤더 */
 .appHeader{
   background-color: silver;
+  grid-template: auto / 1fr;
+  align-items: center;
+  background-color: #38302e;
   /* display: flex;
   flex-flow: column nowrap; */
 }
-/* .memberOnly{
-  display: flex;
-  order: -1;
-  justify-content: flex-end;
+.brand, .memberOnly, .searchForm{
+  padding: 10px 20px;
 }
-.searchForm{
-  margin: 0 auto;
+/* 모바일 브랜드 */
+.brand *{
   display: block;
-} */
+}
+
+/* 모바일 멤버 링크 */
+.memberOnly{
+  order: -1;
+  background-color: #988574;
+  color: #fff;}
+/* 모바일 검색폼 */
+input[type="search"]{
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 2px 5px;
+  height: 35px;
+  width: calc(100% - 45px);
+  margin-right: 5px;
+}
+.buttonSearch{
+  width: 35px;
+  height: 35px;
+  border: 0;
+  padding: 0;
+}
 /* 모바일 네비게이션 */
 .appNavigation{
   background-color: purple;
