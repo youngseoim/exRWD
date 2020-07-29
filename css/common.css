@@ -237,12 +237,24 @@ input[type="search"]{
   padding: 2px 5px;
   height: 35px;
 }
-.appNavigation{
-  background-color: purple;
-}
 /* 공통 메인 컨텐츠 */
 .appMain{
   background-color: lime;
+}
+.book{
+  background-color: red;
+}
+.news{
+  background-color: blue;
+}
+.board{
+  background-color: yellow;
+}
+.favorite{
+  background-color: skyblue;
+}
+.twitter{
+  background-color: brown;
 }
 /* 공통 푸터 */
 .appFooter{
