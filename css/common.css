@@ -315,14 +315,14 @@ input[type="search"]{
 .appMain [class*="__title"]{
   margin: 0;
   font-size: 1.6rem;
+  min-height: 60px;
+  padding-left: 65px;
 }
 .appMain [class*="__enTitle"]{
   display: block;
   margin-top: 5px;
 }
 .sprite{
-  min-height: 60px;
-  padding-left: 65px;
   background-image: url(./images/sprite_main.png);
   background-repeat: no-repeat;
 }
@@ -330,16 +330,16 @@ input[type="search"]{
   background-position: 0 0;
 }
 .spriteNews{
-  background-position: 0 -230;
+  background-position: 0 -230px;
 }
 .spriteBoard{
-  background-position: 0 -115;
+  background-position: 0 -115px;
 }
 .spriteFavorite{
-  background-position: 0 -345;
+  background-position: 0 -345px;
 }
 .spriteTwitter{
-  background-position: 0 -460;
+  background-position: 0 -460px;
 }
 
 .themeGreen {
