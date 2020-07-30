@@ -39,12 +39,13 @@ body {
 /* 데스크탑 검색폼  */
 
 /* 데스크탑 검색폼 */
-.searchForm {
+.serchForm {
   grid-area: 2/2/3/3;
   /* text-align: right; */
   display: grid;
   grid-template-columns: 1fr auto;
   grid-gap: 10px;
+
 
   /* grid-template: repeat(1,1fr) / repeat(2,auto); */
   /* grid-template-areas: "input btn"; */
