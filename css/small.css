@@ -179,37 +179,18 @@ input[type="search"]{
   background-color: lime;
   display: flex;
   flex-flow: row wrap;
-  padding: 0 20px;
+  padding: 10px 20px;
 }
-.book{
-  background-color: red;
-  width: 100%;
-  height: 10vh;
-}
-.news{
-  background-color: blue;
-  width: 100%;
-  height: 10vh;
-
-}
-.board{
-  background-color: lime;
-  width: 100%;
-  height: 10vh;
-
-}
-.favorite{
-  background-color: skyblue;
-  width: 100%;
-  height: 10vh;
-
-}
+.book,
+.news,
+.board,
+.favorite,
 .twitter{
-  background-color: brown;
+  margin-top: 10px;
+  margin-bottom: 10px;
   width: 100%;
-  height: 10vh;
-
 }
+
 /* 모바일 푸터 */
 .appFooter{
   background-color: orange;

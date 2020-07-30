@@ -108,10 +108,11 @@ body {
 }
 /* 데스크탑 메인 */
 .appMain{
-  background-color: lime;
   display: grid;
-  grid-template: repeat(2, 25vh) / repeat(12, 1fr);
+  grid-template: auto/ repeat(12, 1fr);
   grid-gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   /* grid-template-columns: repeat(12, 1fr); */
   /* grid-template-rows: auto; */
   /* grid-template-areas:"book book book book book news news news news news news news"
@@ -120,6 +121,10 @@ body {
 /* 데스크탑 추천 서적 */
 .book{
   grid-area: 1 / 1 / 2 / span 4;
+}
+.book__cover{
+  margin-left: 40px;
+  margin-right: 40px;
 }
 /* 데스크탑 새소식 */
 .news{
