@@ -176,7 +176,6 @@ input[type="search"]{
 }
 /* 모바일 메인 컨텐츠 */
 .appMain{
-  background-color: lime;
   display: flex;
   flex-flow: row wrap;
   padding: 10px 20px;
@@ -195,12 +194,21 @@ input[type="search"]{
 .favorite__list a:focus::before{
 left: 10em;
 }
+/* 공통 트위터 */
+.twitter__userProfile{
+  text-align: right;
+}
 /* 모바일 푸터 */
-.appFooter{
+/* .appFooter{
   background-color: orange;
   width: 100%;
+} */
+.appFooter{
+  line-height: 2;
 }
-
+.address span{
+  display: block;
+}
 
 
 

@@ -39,7 +39,7 @@ body {
 /* 데스크탑 검색폼  */
 
 /* 데스크탑 검색폼 */
-.serchForm {
+.searchForm {
   grid-area: 2/2/3/3;
   /* text-align: right; */
   display: grid;
@@ -162,3 +162,10 @@ right: -10px;
 .twitter {
   grid-area: 2 / 5 / 3 / span 5;
 }
+
+/* 데스크탑 푸터 */
+
+.appFooter{
+  text-align: center;
+}
+

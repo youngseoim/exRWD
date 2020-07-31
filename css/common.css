@@ -596,9 +596,110 @@ video.responsive{
   box-shadow: 2px 2px 0 0 #000;
 
 }
-/* 공통 푸터 */
-.appFooter{
-  background-color: orange;
+/* 공통 트위터 */
+/* 내가짠 코드 */
+/* .twitter__userInfo,
+.twitter__userProfile,
+.twitter__userInfo dd{
+  margin: 0;
 }
+.twitter{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(4,1fr);
+  grid-template-areas: "title title Profile"
+                        "Info Info Profile"
+                        "sum sum Profile"
+                        "data data data";
+}
+.twitter__title{
+  grid-area: title;
+}
+.twitter__userInfo{
+  grid-area: Info;
+}
+.twitter__userProfile{
+  grid-area: Profile;
+}
+.twitter__summary{
+  grid-area: sum;
+}
+.twitter__data{
+  grid-area: data;
+} */
+/* 강사님이 짠 코드 */
+.twitter{
+  display: grid;
+  grid-template-columns: 1fr 20%;
+  grid-column-gap: 20px;
+}
+.twitter__title{
+  grid-area:1/1/2/3;
+}
+.twitter__userInfo{
+  display: flex;
+  margin-left: 20px;
+}
+.twitter__userName,
+.twitter__userId{
+  margin: 0;
+}
+.twitter__userProfile{
+  grid-area:2/2/4/3;
+  margin: 0;
+}
+.circlePhoto{
+  border-radius: 50%;
+  border: 1px solid #aaa;
+  padding: 5px;
+}
+.twitter__summary{
+  margin-left: 20px;
+}
+.twitter__date{
+  margin: 1em 0;
+  text-align: right;
+}
+/* 공통 푸터 */
+/* .appFooter{
+    background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 1.6rem;
+}
+.appFooter address{
+  font-style: normal;
+} */
 
-
+.appFooter{
+  background:
+  linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+  linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+  linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+  linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+  linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+  linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+  background-color: #131313;
+  background-size: 20px 20px;
+  color: #fff;
+  padding: 2em 2em;
+  font-size: 1.6rem;
+}
+.address{
+  font-style: normal;
+}
+.copyright{
+  font-style: 1em;
+}
+.address, 
+.copyright{
+  margin: 1em 0;
+}
