@@ -378,7 +378,9 @@ input[type="search"]{
   /* background-color: red; */
 }
 .news{
-  background-color: blue;
+  /* background-color: blue; */
+  /* max-width: 750px; */
+  /* max-height:580px */
 }
 .board{
   background-color: yellow;
@@ -443,8 +445,67 @@ input[type="search"]{
   font-size: 2.5rem;
   font-weight: 700;
 }
+
+/* 공통 새소식  - iframe*/
+
+.news__videoContainer{
+  margin: 15px 20px;
+}
+/* .news__videoContainer{
+  max-width:560px ;
+  height: 315px;
+
+}
+.iframe16To9{
+  width: 100%;
+  height:0;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+.iframe{
+  padding-bottom: 56.25%;
+
+  width: 100%;
+  height: 100%;
+  position: absolute;
+} */
+
+.iframeContainer{
+  width: 100%;
+  height: 0 !important;
+  position: relative;
+
+}
+.iframe4To3{
+  padding-top: 75%;
+}
+.iframe16To9{
+  padding-top: 56.25%;
+}
+.iframe21To9{
+  padding-top: 42%;
+}
+.iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+video.responsive{
+  width: 100%;
+}
+.news__videoContainer{
+  margin: 15px 20px;
+}
+.news__date{
+  display: block;
+  text-align: right;
+  margin: 1em 0;
+}
 /* 공통 푸터 */
 .appFooter{
   background-color: orange;
 }
+
 
