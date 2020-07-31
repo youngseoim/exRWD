@@ -9,11 +9,11 @@ body {
 }
 
 .appHeader,
-.appMain, 
-.menu__list{
-  width: 1000px;
-  /* min-width: 1000px; */
-  /* max-width: 1800px; */
+.appMain,
+.menu__list {
+  width: 78.125%;
+  min-width: 1000px;
+  max-width: 1800px;
 }
 
 .appNavigation {
@@ -33,7 +33,7 @@ body {
 
 /* 데스크탑 멤버링크 */
 .memberOnly {
-  grid-area:1/2/2/3;
+  grid-area: 1/2/2/3;
 }
 
 /* 데스크탑 검색폼  */
@@ -50,51 +50,60 @@ body {
   /* grid-template: repeat(1,1fr) / repeat(2,auto); */
   /* grid-template-areas: "input btn"; */
 }
-.searchForm fieldset{
+
+.searchForm fieldset {
   display: contents;
   /* display: grid; */
 }
-.buttonSearch{
+
+.buttonSearch {
   border: 1px solid #aaa;
   border-radius: 5px;
   padding: 2px 10px;
   background-color: #988574;
   color: #fff;
 }
-.searchForm input{
+
+.searchForm input {
   /* width: 100%; */
   /* grid-area: 'input'; */
 }
+
 /* 데스크탑 네비게이션 */
-.appNavigation{
+.appNavigation {
   background-color: #988574;
   box-shadow: 0 -2px 2px 0 #ccc, 0 2px 2px 0 #ccc;
 }
-.buttonBurger{
+
+.buttonBurger {
   display: none;
 }
-.menu__list{
-  margin-left:auto;
+
+.menu__list {
+  margin-left: auto;
   margin-right: auto;
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto;
   color: #fff;
   padding-top: 20px;
   padding-bottom: 10px;
   /* justify-items: center; */
 }
-.menu__link{
+
+.menu__link {
   font-size: 1.6rem;
   font-weight: 700;
   text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
 }
-.menu__subMenu li{
+
+.menu__subMenu li {
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 1.5rem;
 }
+
 /* .menu__subMenu{
   padding: 0;
 } */
@@ -102,12 +111,13 @@ body {
   display: block;
   padding: 5px;
 } */
-.menu__item{
+.menu__item {
   /* display: grid; */
   /* justify-content: center; */
 }
+
 /* 데스크탑 메인 */
-.appMain{
+.appMain {
   display: grid;
   grid-template: auto/ repeat(12, 1fr);
   grid-gap: 20px;
@@ -118,27 +128,37 @@ body {
   /* grid-template-areas:"book book book book book news news news news news news news"
                       "board board board board board board board board board board twitter favorite"; */
 }
+
 /* 데스크탑 추천 서적 */
-.book{
+.book {
   grid-area: 1 / 1 / 2 / span 4;
 }
-.book__cover{
+
+.book__cover {
   margin-left: 40px;
   margin-right: 40px;
 }
+
 /* 데스크탑 새소식 */
-.news{
+.news {
   grid-area: 1 / 5 / 2 / span 8;
 }
+
 /* 데스크탑 게시판 */
-.board{
+.board {
   grid-area: 2 / 1 / 3 / span 4;
 }
+
 /* 데스크탑 인기사이트 */
-.favorite{
+.favorite {
   grid-area: 2 / 10 / 3 / span 3;
 }
+.favorite__list a:hover::before, 
+.favorite__list a:focus::before{
+right: -10px;
+}
+
 /* 데스크탑 트위터 */
-.twitter{
+.twitter {
   grid-area: 2 / 5 / 3 / span 5;
 }

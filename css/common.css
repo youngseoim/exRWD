@@ -374,24 +374,6 @@ input[type="search"]{
   height: 59px;
 } */
 
-.book{
-  /* background-color: red; */
-}
-.news{
-  /* background-color: blue; */
-  /* max-width: 750px; */
-  /* max-height:580px */
-}
-.board{
-  background-color: yellow;
-}
-.favorite{
-  background-color: skyblue;
-}
-.twitter{
-  background-color: brown;
-}
-
 /* 공통 추천 서적 */
 /* 내가짠 코드 */
 /* .book__cover,
@@ -417,7 +399,8 @@ input[type="search"]{
 
 /* 강사님이 짠 코드 */
 .book{
-
+  position: relative;
+  overflow: hidden;
 }
 .book__cover{
   margin: 15px 20px;
@@ -483,7 +466,7 @@ input[type="search"]{
   padding-top: 56.25%;
 }
 .iframe21To9{
-  padding-top: 42%;
+  /* padding-top: 42%; */
 }
 .iframe{
   position: absolute;
@@ -502,6 +485,116 @@ video.responsive{
   display: block;
   text-align: right;
   margin: 1em 0;
+}
+/* 공통 게시판 */
+/* 내가짠 게시판 */
+/* .board{
+  background-color: yellow;
+  position: relative;
+}
+.board__list li{
+  display: flex;
+}
+.board__list a{
+  padding: 10px 0;
+  width: calc(100% - 80px);
+  white-space: nowrap;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+.board__list time{
+  position: absolute;
+  right: 0;
+}
+.board__more{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+} */
+/* 강사님 게시판 */
+.board{
+  position: relative;
+}
+.board__more{
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 10px;
+}
+.board__list{
+  margin: 15px 0;
+  padding-left: 20px;
+}
+.board__list li{
+  margin: 10px 0;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.board__list a{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+  margin: 0 10px 0 5px;
+}
+/* 인기 사이트 */
+/* 내가짠 코드*/
+/* .favorite__list{
+  padding-left: 20px;
+}
+.favorite__list li{
+  position: relative;
+}
+.favorite__list li:hover ::after{
+  position: absolute;
+  content: attr(data-tooltip);
+  z-index: 1;
+  width: 140px;
+  height: 30px;
+}
+.favorite__list a{
+  display: block;
+  padding:5px 0;
+  background:transparent;
+} */    
+/* 강사님 코드 */
+.favorite__list{
+  margin: 15px 0;
+  padding-left: 20px;
+}
+.favorite__list li{
+  counter-increment: number;
+  margin: 10px 0;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.favorite__list li::before{
+  content:counter(number);
+  color: #fff;
+  background: #eea60a;
+  padding: 2px 6px;
+  margin-right: 5px;
+  display:inline-block;
+  border-radius: 50%;
+}
+.favorite__list a{
+  position: relative;
+  flex-grow: 1;
+}
+.favorite__list a:hover::before, 
+.favorite__list a:focus::before{
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 1em;
+  background-color: #eea60a;
+  border: 1px solid #aaa;
+  padding: 5px;
+  z-index: 100;
+  color: #fff;
+  box-shadow: 2px 2px 0 0 #000;
+
 }
 /* 공통 푸터 */
 .appFooter{
